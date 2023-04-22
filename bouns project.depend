@@ -1,14 +1,17 @@
 # depslib dependency file v1.0
-1681996440 source:e:\matrix\bouns project\main.cpp
+1682162962 source:e:\matrix\bouns project\main.cpp
 	<iostream>
 	<Matrix.h>
+	<windows.h>
+	<iomanip>
 
-1682067358 source:e:\matrix\bouns project\src\matrix.cpp
+1682158206 source:e:\matrix\bouns project\src\matrix.cpp
 	"Matrix.h"
 	<windows.h>
 	<iomanip>
 
-1681993933 e:\matrix\bouns project\include\matrix.h
+1682163056 e:\matrix\bouns project\include\matrix.h
 	<iostream>
-	<string>
+	<windows.h>
+	<iomanip>
 
