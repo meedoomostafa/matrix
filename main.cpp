@@ -20,6 +20,7 @@ int main()
 
         int n;
         cout<<" enter number of progress you want : "; cin>>n;
+        cout<<endl<<endl;
         Matrix b(n);
 
         switch(n)
@@ -53,7 +54,12 @@ int main()
                 b.display_inverse();
                 break;
         }
-        cout<<"do you want another progress ?(y/n)";cin>>k;
+        cout<<"-----------------------------------"<<endl;
+        cout<<"do you want another progress ?(y/n) : ";cin>>k;
+        cout<<"-----------------------------------"<<endl;
+        cout<<endl<<endl;
+        if(k=='y')
+            system("cls");
 
     }while(k!='n');
 }

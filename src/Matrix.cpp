@@ -19,11 +19,13 @@ void Matrix::setdata()
         cout<<endl<<endl;
         cout<<"enter number of rows matrix[2] : ";cin>>row_num2;
         cout<<"enter number of columns matrix[2] : ";cin>>column_num2;
+        cout<<endl<<endl;
     }
     else
     {
         cout<<"enter number of rows : ";cin>>row_num;
         cout<<"enter number of columns : ";cin>>column_num;
+        cout<<endl<<endl;
     }
 }
 void Matrix::matrixsum()
@@ -40,7 +42,10 @@ void Matrix::matrixsum()
     }
     else
     {
-        cout<<setw(40)<<"can't sum "<<endl;
+        cout<<setw(50)<<"-----------"<<endl;
+        cout<<setw(50)<<" can't sum "<<endl;
+        cout<<setw(50)<<"-----------"<<endl;
+
     }
 }
 void Matrix::getarr()
@@ -94,6 +99,7 @@ void Matrix::getarr()
                 cin>>arr1[row][column];
             }
         }
+    }
 }
 void Matrix::matrixmult()
 {
@@ -164,15 +170,19 @@ void Matrix::matrixinverse()
 }
 void Matrix::display_sum()
 {
-    cout<<endl<<endl<<" the sum of two matrix is : "<<endl<<endl;
-    for(int row=0;row<row_num;row++)
-        {
-            for(int column=0;column<column_num;column++)
+    if(row_num==row_num2 && column_num==column_num2)
+    {
+        cout<<endl<<endl<<" the sum of two matrix is : "<<endl<<endl;
+        for(int row=0;row<row_num;row++)
             {
-                cout<<" "<<arr[row][column]<<" ";
+                for(int column=0;column<column_num;column++)
+                {
+                    cout<<" "<<arr[row][column]<<" ";
+                }
+                cout<<endl;
             }
-            cout<<endl;
-        }
+            cout<<endl<<endl;
+    }
 }
 void Matrix::display_mult()
 {
@@ -185,6 +195,7 @@ void Matrix::display_mult()
         }
         cout<<endl;
     }
+    cout<<endl<<endl;
 
 }
 void Matrix::display_transpose()
@@ -198,10 +209,11 @@ void Matrix::display_transpose()
         }
         cout<<endl;
     }
+    cout<<endl<<endl;
 }
 void Matrix::display_inverse()
 {
-    cout<<endl<<endl<<"the transpose of two matrix is : "<<endl<<endl;
+    cout<<endl<<endl<<"the inverse of two matrix is : "<<endl<<endl;
     for(int row=0;row<row_num;row++)
     {
         for(int column=0;column<column_num;column++)
@@ -210,4 +222,5 @@ void Matrix::display_inverse()
         }
         cout<<endl;
     }
+    cout<<endl<<endl;
 }
